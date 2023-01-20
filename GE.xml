@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="3" parallel="tests" name="Suite">
+  <groups>
+  <run>
+  <include name="regression"></include>
+  <include name="smoke,regression"></include>
+  <include name="smoke"></include>
+  </run>
+  </groups>
+  <test thread-count="3" parallel="tests" name="Test">
+   
+    <classes>
+      <class name="com.Demo.SampleTest01_Testng"/>
+      <class name="com.Demo.SampleTest02_Testng"/>
+      <class name="com.Demo.SampleTest03_Testng"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

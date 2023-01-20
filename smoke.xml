@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite">
+<groups>
+<run>
+<include name="smoke"></include>
+</run>
+</groups>
+  <test thread-count="2" parallel="tests" name="Test">
+  <parameter name="BROWSER" value="Chrome"></parameter>
+    <classes>
+      <class name="Profile_Module.EditUsername_with_Testng_Test"/>
+      <class name="Profile_Module.EditProfile_with_Testng_Test"/>
+      <class name="Profile_Module.EditProfileAndUPdateprofilePhoto_with_Testng"/>
+      <class name="Home_Module.ShareStatus_with_Testng_Test"/>
+      <class name="User_Module.WriteAndDeleteComment_with_Testng_Test"/>
+      <class name="Photo_Module.Addphoto_with_Testng_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
